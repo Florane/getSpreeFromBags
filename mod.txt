@@ -3,7 +3,7 @@
 	"name" : "Bags in Spree",
 	"description" : "Get additional spree for secured bags",
 	"author" : " no",
-	"version" : "5.1",
+	"version" : "5.2",
 	"priority" : 0,
 	"color" : "0.129 0.133 0.141",
 	"hooks" : [

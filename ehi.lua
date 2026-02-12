@@ -1,3 +1,7 @@
+if not EHI then
+	return
+end
+
 Hooks:PostHook(EHI,"IsLootCounterVisible","IsLootCounterVisibleSpree",function(self)
 	return self:GetTrackerOrWaypointOption("show_loot_counter", "show_waypoints_loot_counter")
 end)
