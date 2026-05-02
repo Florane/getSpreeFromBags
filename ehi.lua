@@ -14,3 +14,6 @@ Hooks:PostHook(EHI.TrackerUtils,"IsLootCounterVisible","TrackerIsLootCounterVisi
 	end
 	return true
 end)
+Hooks:OverrideFunction(EHI,"ShowLootCounterNoCheck",function(self, params, waypoint_params)
+	self:ShowLootCounterNoChecks(params, waypoint_params)
+end)
