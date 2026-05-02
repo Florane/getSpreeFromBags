@@ -3,12 +3,13 @@
 	"name" : "Bags in Spree",
 	"description" : "Get additional spree for secured bags",
 	"author" : " no",
-	"version" : "5.2",
+	"version" : "6.0",
 	"priority" : 0,
 	"color" : "0.129 0.133 0.141",
 	"hooks" : [
 		{ "hook_id" : "lib/managers/crimespreemanager", "script_path" : "crimespreemanager.lua"},
 		{ "hook_id" : "core/lib/utils/coreapp", "script_path" : "ehi.lua"},
+		{ "hook_id" : "lib/managers/menu/stageendscreentabcrimespree", "script_path" : "menudisplay.lua"},
 	],
 	"updates" : [
 		{

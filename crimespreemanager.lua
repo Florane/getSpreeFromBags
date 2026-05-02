@@ -1,3 +1,7 @@
+if not GetSpreeFromBags then
+	_G.GetSpreeFromBags = _G.GetSpreeFromBags or {}
+end
+
 -- Make secured bonus bags add crime spree levels
 -- Unfortunately a function override is pretty much the only thing we can do here
 Hooks:OverrideFunction(CrimeSpreeManager, "on_mission_completed", function (self, mission_id)
@@ -13,6 +17,7 @@ Hooks:OverrideFunction(CrimeSpreeManager, "on_mission_completed", function (self
 		self._mission_completion_gain = mission_data.add
 
 		local bonus_bags = managers.loot:get_secured_bonus_bags_amount()
+		GetSpreeFromBags.bonus_bags = bonus_bags -- get secured bags for the menu display
 		if bonus_bags > 0 then
 			spree_add = spree_add + bonus_bags
 		end
